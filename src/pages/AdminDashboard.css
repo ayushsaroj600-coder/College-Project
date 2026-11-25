@@ -1,0 +1,105 @@
+
+.admin-dashboard {
+  min-height: 100vh;
+  background: #f4f7f4;
+}
+
+.admin-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 30px;
+  background: #176b3a;
+  color: white;
+}
+
+.admin-navbar button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-content {
+  padding: 30px;
+}
+
+.admin-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.admin-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+.admin-card h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.admin-card h3 {
+  color: #176b3a;
+  margin-bottom: 10px;
+}
+
+.admin-card p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.admin-navbar button:hover {
+  background: #e0e0e0;
+}
+
+@media (max-width: 600px) {
+  .admin-navbar {
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .admin-content {
+    padding: 20px 15px;
+  }
+}
+
+.manage-crops-section {
+  background: white;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 12px;
+}
+
+.admin-crop-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  margin-top: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.admin-crop-item button {
+  background: #d93025;
+  color: white;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .admin-crop-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

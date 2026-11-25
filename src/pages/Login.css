@@ -1,0 +1,153 @@
+
+/* Login Page Background */
+.login-container {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #e8f5e9, #f1f8e9, #ffffff);
+  font-family: Arial, sans-serif;
+}
+
+/* Login Card Content */
+.login-container h1 {
+  color: #188038;
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.login-container h2 {
+  color: #1b4332;
+  font-size: 27px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.login-container > p {
+  color: #64748b;
+  font-size: 15px;
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+/* Form Layout */
+.login-container form {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input Fields */
+.login-container input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  background: white;
+  transition: 0.3s;
+}
+
+.login-container input:focus {
+  border-color: #188038;
+  box-shadow: 0 0 0 3px rgba(24, 128, 56, 0.12);
+}
+
+/* Buttons */
+.login-container button {
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+  padding: 14px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #188038;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-container button:hover {
+  background: #116329;
+  transform: translateY(-2px);
+}
+
+.login-container button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Signup / Login Switch Button */
+.login-container > p button {
+  width: auto;
+  max-width: none;
+  padding: 5px 8px;
+  margin: 0 0 0 5px;
+  background: transparent;
+  color: #188038;
+  font-size: 15px;
+  box-shadow: none;
+}
+
+.login-container > p button:hover {
+  background: transparent;
+  color: #116329;
+  text-decoration: underline;
+  transform: none;
+}
+
+/* Status Message */
+.login-container form + p {
+  color: #188038;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 18px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 20px 15px;
+  }
+
+  .login-container h1 {
+    font-size: 27px;
+  }
+
+  .login-container h2 {
+    font-size: 23px;
+  }
+
+  .login-container form {
+    max-width: 100%;
+  }
+
+  .login-container input,
+  .login-container form button {
+    font-size: 15px;
+  }
+}
+
+.login-container form select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  box-sizing: border-box;
+}
