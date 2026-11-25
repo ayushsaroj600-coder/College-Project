@@ -2,7 +2,7 @@ import {
   listenToCrops,
   addCropToFirestore,
   deleteCrop
-} from "./Services/cropService";
+} from "./services/cropService";
 
 import RoleSelection from "./pages/RoleSelection";
 import FarmerDashboard from "./pages/FarmerDashboard";

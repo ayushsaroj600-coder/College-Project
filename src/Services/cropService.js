@@ -1,4 +1,4 @@
-import { db } from '../services/firebase';
+import { db } from './firebase';
 import { collection, addDoc, onSnapshot, doc, updateDoc, deleteDoc, serverTimestamp, query, orderBy } from 'firebase/firestore';
 
 const cropsRef = collection(db, 'crops');

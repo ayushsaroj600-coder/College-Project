@@ -1,5 +1,5 @@
 
-import { db } from "../services/firebase";
+import { db } from "./firebase";
 import { collection, addDoc } from "firebase/firestore";
 
 async function testFirestore() {
