@@ -1,8 +1,11 @@
+// Commmand   cd college_Project/vite-project
+
+
 import {
   listenToCrops,
   addCropToFirestore,
   deleteCrop
-} from "./services/cropService";
+} from "./services/cropservice.js";
 
 import RoleSelection from "./pages/RoleSelection";
 import FarmerDashboard from "./pages/FarmerDashboard";
@@ -13,7 +16,7 @@ import { useState, useEffect } from 'react'
 import BuyerDashboard from "./pages/BuyerDashboard";
 import AdminDashboard from "./pages/AdminDashboard";
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { auth, db } from "./services/firebase";
+import { auth, db } from "./services/firebase.js";
 import { doc, getDoc } from "firebase/firestore";
 //import { db } from "./services/firebase";
 //import { listenToCrops, addCropToFirestore } from "./services/cropService";
